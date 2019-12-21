@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "type": "shell",
+    "windows": {
+        "command": "javac -classpath .;.\\easygraphics.jar ${file} && java -classpath .:./easygraphics.jar ${fileBasenameNoExtension}"
+    },
+    "osx": {
+        "command": "javac -classpath .:./easygraphics.jar ${file} && java -classpath .:./easygraphics.jar ${fileBasenameNoExtension}"
+    },
+    "linux": {
+        "command": "javac -classpath .:./easygraphics.jar ${file} && java -classpath .:./easygraphics.jar ${fileBasenameNoExtension}"
+    },
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}
